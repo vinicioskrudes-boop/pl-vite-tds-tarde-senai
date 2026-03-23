@@ -1,0 +1,146 @@
+.s1 {
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.imgSide {
+    width: 300px;
+    border-radius: 999px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 10px #090909;
+}
+
+.imgSide img {
+    width: 300px;
+    height: 300px;
+    transition: all 200ms linear;
+    filter: grayscale(1);
+}
+
+.imgSide img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+.textSide {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textSide h1 {
+    font-size: 48px;
+    text-align: left;
+    width: 100%;
+}
+
+.textSide p {
+    font-size: 22px;
+}
+
+.s2 {
+    min-height: 100vh;
+    height: auto;
+    background-image: url('/bg.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.s3 {
+    min-height: 100vh;
+    height: auto;
+}
+
+.s4 {
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid var(--dark);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 3px 10px var(--dark);
+    width: 300px;
+}
+
+.formulario label{
+    width: 100%;
+    margin-bottom: -15px;
+}
+
+.formulario input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.formulario textarea{
+    width: 100%;
+    min-width: 255px;
+    max-width: 255px;
+    height: 150px;
+    min-height: 150px;
+    max-height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid var(--dark);
+    transition: all 200ms ;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: var(--dark);
+    color: var(--fl);
+    box-shadow: 0px 3px 10px var(--dark);
+}
+
+
+
+@media (width <= 1000px) {
+    .s1 {
+        min-height: 60vh;
+        padding: 100px 20px 20px 20px;
+    }
+
+    .textSide {
+        height: 300px;
+    }
+
+}
